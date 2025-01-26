@@ -1,0 +1,331 @@
+/* Configuração geral do body para remover margens e espaçamentos e evitar rolagem horizontal */
+/***********************************HEITOR PINHEIRO TAVARES************************************/
+body { 
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o padding padrão */
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+}
+
+/* Configuração do primeiro bloco (seção 1) */
+#section1 {
+    height: 100vh; /* Define altura de 100% da viewport */
+    width: 100%; /* Largura total */
+    background-image: url(assets/Background_Intro.png); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+/* Estilização do container dentro da seção 1 */
+#box-section1 {
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    display: flex; /* Define um layout flex */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    padding-top: 50px; /* Adiciona espaçamento superior */
+}
+
+/* Estilo do ícone circular */
+.icon {
+    width: 150px; /* Largura fixa */
+    height: 150px; /* Altura fixa */
+    border-radius: 50%; /* Torna o elemento circular */
+    background-image: url(assets/1734703816460.jpg); /* Imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir o espaço */
+    background-position: center; /* Centraliza a imagem */
+    border: 2px solid rgba(227, 100, 110, 1); /* Define uma borda sólida colorida */
+    padding: 5px; /* Espaçamento interno */
+    background-clip: content-box; /* Limita o fundo ao conteúdo */
+    position: relative; /* Necessário para elementos filhos absolutos */
+}
+
+/* Ajuste da imagem secundária no ícone */
+.icon-image {
+    position: absolute; /* Posiciona de forma absoluta dentro do ícone */
+    top: 110px; /* Posiciona a 110px do topo */
+    right: -5px; /* Move 5px para fora à direita */
+    width: 40px; /* Largura fixa */
+    height: auto; /* Altura proporcional */
+}
+
+/* Estilo do título principal */
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Fonte elegante e legível */
+    color: azure; /* Cor clara */
+    line-height: 2px; /* Altura entre linhas */
+    margin-top: 40px; /* Espaçamento superior */
+}
+
+/* Estilo do subtítulo */
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna */
+    color: rgb(48, 48, 180); /* Cor azul escuro */
+    font-size: 50px; /* Tamanho da fonte */
+    line-height: 1px; /* Altura entre linhas */
+}
+
+/* Estilo de texto menor */
+h3 {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte genérica */
+    color: azure; /* Cor clara */
+    font-size: 14px; /* Tamanho pequeno */
+}
+
+/* Configuração dos boxes */
+#boxes {
+    padding-top: 30px; /* Espaçamento superior */
+    display: flex; /* Layout flexível */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+.box {
+    background-color: #292C34; /* Fundo escuro */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    display: flex; /* Layout flexível */
+    justify-content: flex-start; /* Alinha o conteúdo no início */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding-left: 10px; /* Espaçamento interno à esquerda */
+}
+
+/* Estilo da imagem dentro da box */
+.box img {
+    width: 30px; /* Tamanho fixo */
+    height: auto; /* Altura proporcional */
+    margin-right: 10px; /* Espaçamento à direita */
+}
+
+/* Estilo de texto genérico */
+span {
+    color: azure; /* Cor clara */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte genérica */
+    text-align: center; /* Alinhamento centralizado */
+}
+
+/* Estilo para a seta (ícone de navegação) */
+.seta {
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 50px; /* Espaçamento superior */
+    cursor: pointer; /* Muda o cursor para "mãozinha" */
+}
+
+/* Estilo para a imagem da seta */
+.seta img {
+    width: 50px; /* Largura fixa */
+    height: auto; /* Altura proporcional */
+}
+
+/* Configuração do layout da seção 2 */
+#section2 {
+    background-color: #16181D; /* Fundo escuro */
+    min-height: 100vh; /* Altura mínima da viewport */
+    width: 100%; /* Largura total */
+    display: flex; /* Layout flexível */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-direction: column; /* Coloca os itens em coluna */
+    padding: 20px 0px 100px; /* Espaçamento interno */
+}
+
+/* Outros estilos seguem o mesmo padrão. */
+
+
+.box-section2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+#boxes-container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project-box {
+    background-color: #292C34;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.inner-box {
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+h6 {
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+#section3 {
+    background-color: #0D0E11;
+    padding: 50px 20px 100px;
+    text-align: center;
+}
+
+.services-header h4 {
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-header h5 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: #292C34;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon img {
+    width: 50px; 
+    height: auto;
+}
+
+.service-box h6 {
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.service-box p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+#section4 {
+    background-image: url(assets/Background_Intro.png);
+    padding: 50px 20px 100px;
+    text-align: center;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.contact-header h4 {
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-header h5 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    color: #A0A0A0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto; 
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292C34;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    gap: 10px; /* Espaço entre ícones e texto */
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-box .icon-left {
+    width: 24px; /* Tamanho do ícone esquerdo */
+    height: auto;
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.contact-box span {
+    flex: 1; /* O texto ocupa o espaço central */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: left; /* Alinha o texto ao lado esquerdo */
+}
+
+.contact-box .icon-right {
+    width: 20px; /* Tamanho da seta */
+    height: auto;
+    margin-left: 10px; /* Espaço entre o texto e a seta */
+}
+
+.contact-box .icon-left {
+    width: 30px; /* Tamanho maior para o ícone */
+    height: auto;
+    margin-right: 10px;
+}
+/***********************************HEITOR PINHEIRO TAVARES************************************/
